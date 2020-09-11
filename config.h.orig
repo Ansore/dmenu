@@ -21,9 +21,9 @@ static const char *colors[SchemeLast][2] = {
 	/* [SchemeNormHighlight] = { "#ffc978", "#222222" }, */
 	/* [SchemeOut] = { "#000000", "#005577" }, */
 	[SchemeNorm] = { "#bbbbbb", "#222222" },
-	/* [SchemeSel] = { "#eeeeee", "#9933ff" }, */
-	/* [SchemeSel] = { "#eeeeee", "#3399ff" }, */
-	[SchemeSel] = { "#eeeeee", "#ff6600" },
+	[SchemeSel] = { "#eeeeee", "#9933ff" },
+	[SchemeSelHighlight] = { "#ffc978", "#9933ff" },
+	[SchemeNormHighlight] = { "#ffc978", "#222222" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
 static const unsigned int alphas[SchemeLast][2] = {
@@ -44,4 +44,4 @@ static unsigned int lineheight = 0;         /* -h option; minimum height of a me
 static const char worddelimiters[] = " ";
 
 /* Size of the window border */
-static const unsigned int border_width = 2;
+static const unsigned int border_width = 3;
